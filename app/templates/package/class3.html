@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/common/list.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+<script src="js/SCORM_12_APIWrapper.js"></script>
+<script src="js/layout/layout.js"></script>
+<link rel="stylesheet" href="css/common/temp.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/classEnd.css">
+<style>
+    video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 88;
+    }
+</style>
+<title><%= className[2] %></title>
+</head>
+<body style="overflow:hidden;">
+<div id="home">
+    <div id="container" class="container">
+        <div id="center-div" class="center-div">
+            <div class="element-div">
+                <div id="navigation">
+                <!-- template -->
+                    <video src="" controls="controls" autoplay="autoplay"></video>
+                    <div class="classEnd">
+                        <div class="btn btn-1"><img src="sco/image/conmmon/bg.png"  alt="" /></div>
+                        <div class="btn btn-2"><img src="sco/image/conmmon/smile.png" height="232" width="231" alt="" /></div>
+                        <a href="dong_shou_xue.html" class="btn btn-3"><img src="sco/image/conmmon/button.png" height="73" width="173" alt="" /></a>
+                        <div class="btn text-1">你已经完成了本知识点的学习。</div>
+                    </div>
+                <!-- end of template -->
+                </div>
+            </div>
+        </div>
+    </div>     
+</div>
+<!--底部导航-->
+    <div class="bottom-div">
+        <div style="visibility: visible;"> 
+            <div class="head-div">
+                <img src="sco/image/class-hour-list/home.png">
+            </div>        
+            <div class="select-bottom-div" style="visibility: visible;">
+                <img src="sco/image/class-hour-list/daohang.png">
+            </div>
+            <div class="full-screen-div" style="visibility: visible;">
+                <img src="sco/image/class-hour-list/shousuo.png" class="all-img suoxiao">
+                <img src="sco/image/class-hour-list/quanp.png" class="fangda">
+            </div>
+        </div>
+    </div>
+<!--右边导航-->
+    <div class="list-div"  style="visibility: visible; right: 5px; width: 300px;">
+        <div class="list-div-1">
+            <a href="./class1.html"><p><%= className[0] %></p></a>
+        <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-2">
+            <a href="./class2.html"><p><%= className[1] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-3">
+            <a href="./class3.html"><p><%= className[2] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-4">
+            <a href="dong_shou_xue.html"><p><%= className[3] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+    </div>    
+    <script src="js/old.js"></script>
+    <script src="js/list.js"></script>
+    <script type="text/javascript" src="js/jquery/media.js"></script>
+    <script type="text/javascript" src="js/classEnd.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/common/list.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+<script src="js/SCORM_12_APIWrapper.js"></script>
+<script src="js/layout/layout.js"></script>
+<link rel="stylesheet" href="css/common/temp.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/class04.css">
+
+<title><%= className[3] %></title>
+</head>
+<body style="overflow:hidden;">
+<div id="home">
+    <div id="container" class="container">
+        <div id="center-div" class="center-div">
+            <div class="element-div">
+                <div id="navigation">
+                <!-- template -->   
+                    <!-- background -->   
+                    <div class="background"></div>
+                    <audio src="sco/audio/04/background.mp3" loop="loop" id="backgroundAudio"></audio>
+                    <audio src="sco/audio/04/m03u04s01_1.mp3" class="title" id="titleAudio"></audio>
+                    <!-- end of background -->
+                    <!-- your code here -->
+
+                    <!-- 步骤 -->
+                    <!-- 这个页面js代码只需要区修改视频和音频的路径,HTML代码请遵循我目前的格式 -->，
+                    <div class="step pointer step-1" data-index="1">
+                        <img src="sco/image/04/m03u04s01_img01.png" />
+                        <img class="lock" src="sco/image/04/m03u04s01_key.png" height="35" width="31" alt="" />
+                    </div>
+
+                    <!-- 按钮 -->
+                    <div class="tag pointer tag-1" data-index="1">
+                        <img src="sco/image/04/m03u04s01_tag01.png" />
+                    </div>
+
+                   <!-- 图片查看区域 -->
+                    <div class="tagImg" id="tagImgWrap">
+                        <img id="tagImg" src="sco/image/04/m03u04s01_btn06.png" height="212" width="235" />
+                        <!-- <div class="close pointer">
+                            <img src="sco/image/04/m03u04s01_close.png" height="19" width="19" alt="" />
+                        </div> -->
+                        <audio src="sco/audio/04/m03u04s01_2_1.mp3"></audio>
+                    </div>
+                   <!--  视频播放区域 -->
+                    <div class="video">
+                        <video id="stepVideo" controls="controls" data-index="1" src="./sco/video/04/4-2a.mp4"></video>
+                    </div>
+                    <div class="btn pointer end" id="finishBtn"><img src="sco/image/04/m03u04s01_finish.png" height="48" width="118" alt="" /></div>
+
+                    <div id="finish">
+                        <img src="sco/image/04/m03u04s04_img01.png" height="560" width="1024" alt="" />
+                        <img src="sco/image/04/m03u04s04_img02.png" height="560" width="1024" alt="" />
+                        <audio src="sco/audio/common/m03u04s04_1.mp3"></audio>
+                    </div>
+                    <div class="classEnd" id="classEnd">
+                        <div class="btn btn-1"><img src="sco/image/conmmon/bg.png"  alt="" /></div>
+                        <div class="btn btn-2"><img src="sco/image/conmmon/smile.png" height="232" width="231" alt="" /></div>
+                        <a href="home.html" class="btn btn-3"><img src="sco/image/conmmon/button_again.png" height="73" width="173" alt="" /></a>
+                        <div class="btn text-1">恭喜你顺利完成！学到的知识要灵活运用，才会变成自己的宝！</div>
+                    </div>
+                    <div class="mask">
+                        <div class="btn btn-1 pointer" id="start"><img src="sco/image/04/m01u01s01_start.png" height="82" width="205" alt="" /></div>
+                    </div>
+                    <!-- end of your code -->
+                     <!--继续弹窗-->
+                    <div class="w_nextDiv"></div>
+                    <div class="w_next_up">
+                        <div class= "w_smile">
+                            <img src="sco/image/class-hour-list/smile.png">    
+                        </div>
+                        <div class="w_font">
+                            <p>你已经完成了本知识点的学习。</p>    
+                        </div>
+                        <div class="w_next_down">
+                            <img class="btn_next" src="sco/image/class-hour-list/button_next.png">
+                        </div>
+                    </div>
+                <!-- end of template -->
+                </div>
+            </div>
+        </div>
+    </div>     
+</div>
+<!--底部导航-->
+    <div class="bottom-div">
+        <div style="visibility: visible;"> 
+            <div class="head-div">
+                <img src="sco/image/class-hour-list/home.png">
+            </div>        
+            <div class="select-bottom-div" style="visibility: visible;">
+                <img src="sco/image/class-hour-list/daohang.png">
+            </div>
+            <div class="full-screen-div" style="visibility: visible;">
+                <img src="sco/image/class-hour-list/shousuo.png" class="all-img suoxiao">
+                <img src="sco/image/class-hour-list/quanp.png" class="fangda">
+            </div>
+        </div>
+    </div>
+<!--右边导航-->
+    <div class="list-div"  style="visibility: visible; right: 5px; width: 300px;">
+        <div class="list-div-1">
+            <a href="./class1.html"><p><%= className[0] %></p></a>
+        <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-2">
+            <a href="./class2.html"><p><%= className[1] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-3">
+            <a href="./class3.html"><p><%= className[2] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+        <div class="list-div-4">
+            <a href="dong_shou_xue.html"><p><%= className[3] %></p></a>
+            <div class="list-div-info"></div>
+        </div>
+    </div>
+    <script src="js/old.js"></script>
+    <script src="js/list.js"></script>
+    <script type="text/javascript" src="js/jquery/media.js"></script>
+    <script type="text/javascript" src="js/class04.js"></script>
+</body>
+</html>
